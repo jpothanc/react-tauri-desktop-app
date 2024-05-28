@@ -1,4 +1,4 @@
-# Tauri to Build Desktop Tools for the Web
+# Build Web Desktop Apps using Tauri
 
 Tauri is a toolkit for developing desktop applications with web frontends. It allows you to compile web apps into native applications on Windows, macOS, and Linux. Tauri integrates with the front-end framework of your choice, whether it's React, Vue, Svelte, or even vanilla JavaScript. Developers create their user interface as if designing a regular web application. Tauri then acts as a bridge, converting this web content into a native application. it is a minimalistic, performant and more secure alternative to other similar tools like Electron.
 My goal here is to demonstrate how you can build your first Tauri app using React and Vite in Windows.
@@ -57,8 +57,11 @@ C:\Projects\React\react-tauri-desktop-app>npx tauri init
     "distDir": "../dist"
   },
   ....
-// this is needed to get the npx tauri build work.
 // It cannot be the default(com.tauri.dev)
+// if you don't change this, npx tauri build command will give following error.
+// ***Error You must change the bundle identifier in `tauri.conf.json > tauri > bundle
+// > identifier`. The default value `com.tauri.dev` is not allowed as it must
+// be unique across applications.***
  "identifier": "com.example.tauri",
 
 //bring up the standalone app
