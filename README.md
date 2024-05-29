@@ -69,7 +69,8 @@ C:\Projects\React\react-tauri-desktop-app>npx tauri init
 ```
 
 ### Building and Running as an executable
-
+```c
 npx tauri build
 //This will create the release package \src-tauri\target\release folder.
 //click react-tauri-desktop-app to run the application
+```
